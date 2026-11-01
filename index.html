@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Solution | Life, Health Insurance & Car and Home Loans in Chennai</title>
+  <meta name="description" content="Welcome Solution, Perambur, Chennai helps individuals and families explore life insurance, health insurance, car loans and home loans with clear, customer-focused guidance.">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHBhdGggZD0iTTI0IDMgTDQyIDkgVjIyIEM0MiAzNCAzNCA0MiAyNCA0NiBDMTQgNDIgNiAzNCA2IDIyIFY5IFoiIGZpbGw9IiMwZjhjOGMiLz48cGF0aCBkPSJNMTQgMjQuNSBMMjEgMzEuNSBMMzUgMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M5YTIyNyIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+/* ==========================================================================
+   Welcome Solution – Stylesheet
+   ========================================================================== */
+
+:root {
+  --navy: #0b1f3a;
+  --navy-2: #13294b;
+  --teal: #0f8c8c;
+  --teal-light: #e6f5f5;
+  --light-blue: #eaf2fb;
+  --gold: #c9a227;
+  --white: #ffffff;
+  --text: #1f2937;
+  --text-muted: #4b5563;
+  --border: #e5e7eb;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 6px 24px rgba(11, 31, 58, 0.08);
+  --shadow-hover: 0 14px 36px rgba(11, 31, 58, 0.16);
+  --container: 1160px;
+  --nav-h: 72px;
+  --font-body: 'Inter', 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-head: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + 12px);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+a { color: var(--teal); text-decoration: none; transition: color .2s ease; }
+a:hover { color: var(--navy); }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0 0 .5em;
+}
+
+p { margin: 0 0 1em; }
+
+.container {
+  width: min(100% - 40px, var(--container));
+  margin-inline: auto;
+}
+
+.section { padding: 96px 0; }
+.section--alt { background: var(--light-blue); }
+
+.section-head { text-align: center; max-width: 680px; margin: 0 auto 56px; }
+.eyebrow {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: .75rem;
+}
+.section-head h2 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); }
+.section-head p { color: var(--text-muted); font-size: 1.05rem; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  background: var(--navy);
+  color: var(--white);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  z-index: 2000;
+}
+.skip-link:focus { left: 12px; color: var(--white); }
+
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: 13px 26px;
+  border-radius: 999px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: .95rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+  text-align: center;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn--primary { background: var(--teal); color: var(--white); box-shadow: 0 6px 18px rgba(15,140,140,.35); }
+.btn--primary:hover { background: #0c7676; color: var(--white); }
+.btn--outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,.7); }
+.btn--outline:hover { background: var(--white); color: var(--navy); }
+.btn--ghost { background: transparent; color: var(--teal); border-color: var(--teal); padding: 10px 20px; font-size: .9rem; }
+.btn--ghost:hover { background: var(--teal); color: var(--white); }
+.btn[disabled] { opacity: .7; cursor: not-allowed; transform: none; }
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: var(--nav-h);
+  z-index: 1000;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 0 var(--border);
+  transition: box-shadow .3s ease;
+}
+.navbar.scrolled { box-shadow: var(--shadow); }
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--navy);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.brand:hover { color: var(--navy); }
+.brand svg { width: 40px; height: 40px; flex-shrink: 0; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: var(--navy);
+  font-weight: 500;
+  font-size: .95rem;
+  position: relative;
+  padding: 6px 0;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 2px;
+  background: var(--teal);
+  transition: width .25s ease;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after { width: 100%; }
+.nav-links a.active { color: var(--teal); }
+
+.nav-cta { padding: 10px 20px; font-size: .9rem; }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--navy);
+}
+.nav-toggle span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--navy);
+  margin: 5px 0;
+  transition: transform .3s ease, opacity .3s ease;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ---------- Hero (Section 1) ---------- */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--nav-h) + 60px) 0 80px;
+  background:
+    radial-gradient(1000px 600px at 85% 20%, rgba(15,140,140,.35), transparent 60%),
+    linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 60%, #0d3b4f 100%);
+  color: var(--white);
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,.07) 1px, transparent 1px);
+  background-size: 26px 26px;
+  pointer-events: none;
+}
+.hero .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 700;
+  margin-bottom: .3em;
+}
+.hero .tagline {
+  font-family: var(--font-head);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: #9be3e3;
+  font-weight: 500;
+  margin-bottom: 1.25em;
+}
+.hero .lead {
+  color: rgba(255,255,255,.85);
+  font-size: 1.05rem;
+  max-width: 540px;
+  margin-bottom: 2em;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero-art { width: 100%; max-width: 520px; justify-self: center; filter: drop-shadow(0 24px 40px rgba(0,0,0,.35)); animation: float 6s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+/* ---------- About (Section 2) ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.about-art {
+  background: var(--light-blue);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+.about-art svg { width: 100%; height: auto; }
+.about-copy h2 { font-size: clamp(1.8rem, 3vw, 2.3rem); }
+.about-copy p { color: var(--text-muted); }
+.about-points { list-style: none; padding: 0; margin: 1.5em 0 0; display: grid; gap: 12px; }
+.about-points li { display: flex; gap: 12px; align-items: flex-start; color: var(--text); }
+.about-points svg { width: 22px; height: 22px; flex-shrink: 0; margin-top: 3px; }
+
+/* ---------- Services (Section 3) ---------- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.service-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: rgba(15,140,140,.35); }
+.service-card__media { background: var(--light-blue); padding: 18px; }
+.service-card__media svg { width: 100%; height: auto; }
+.service-card__body { padding: 22px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+.service-card__icon {
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  background: var(--teal-light);
+  color: var(--teal);
+  display: grid; place-items: center;
+  margin-bottom: 12px;
+}
+.service-card__icon svg { width: 24px; height: 24px; }
+.service-card h3 { font-size: 1.2rem; margin-bottom: .4em; }
+.service-card > .service-card__body > p { color: var(--text-muted); font-size: .95rem; }
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25em;
+  font-size: .9rem;
+  color: var(--text);
+  display: grid;
+  gap: 6px;
+}
+.service-card ul li::before {
+  content: "";
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.service-card .btn { margin-top: auto; align-self: flex-start; }
+
+/* ---------- Why Choose Us (Section 4) ---------- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.feature {
+  text-align: center;
+  padding: 28px 18px;
+  border-radius: var(--radius);
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.feature:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.feature__icon {
+  width: 60px; height: 60px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal), var(--navy-2));
+  color: var(--white);
+  display: grid; place-items: center;
+}
+.feature__icon svg { width: 28px; height: 28px; }
+.feature h3 { font-size: 1.02rem; margin-bottom: .4em; }
+.feature p { color: var(--text-muted); font-size: .9rem; margin: 0; }
+
+.statement {
+  margin: 56px auto 0;
+  max-width: 760px;
+  text-align: center;
+  padding: 28px 32px;
+  border-left: 4px solid var(--gold);
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  color: var(--navy);
+  font-weight: 500;
+}
+
+/* ---------- Contact (Section 5) ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: start;
+}
+.contact-info { background: var(--navy); color: var(--white); border-radius: var(--radius); padding: 40px; box-shadow: var(--shadow); }
+.contact-info h2 { color: var(--white); font-size: 1.6rem; }
+.contact-info > p { color: rgba(255,255,255,.8); }
+.contact-list { list-style: none; padding: 0; margin: 24px 0 28px; display: grid; gap: 22px; }
+.contact-list li { display: flex; gap: 14px; align-items: flex-start; }
+.contact-list .ci {
+  width: 44px; height: 44px; flex-shrink: 0;
+  border-radius: 12px;
+  background: rgba(255,255,255,.08);
+  display: grid; place-items: center;
+  color: #9be3e3;
+}
+.contact-list .ci svg { width: 22px; height: 22px; }
+.contact-list strong { display: block; color: var(--white); font-size: .9rem; letter-spacing: .02em; }
+.contact-list span, .contact-list address { color: rgba(255,255,255,.85); font-style: normal; font-size: .95rem; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.contact-actions .btn--outline { font-size: .9rem; padding: 11px 20px; }
+
+.enquiry-form {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+.enquiry-form h3 { font-size: 1.4rem; margin-bottom: 1.25rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.field { display: flex; flex-direction: column; margin-bottom: 18px; }
+.field--full { grid-column: 1 / -1; }
+.field label { font-weight: 600; font-size: .9rem; color: var(--navy); margin-bottom: 6px; }
+.field label .req { color: #b42318; }
+.field input,
+.field select,
+.field textarea {
+  font: inherit;
+  font-size: .97rem;
+  padding: 12px 14px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--text);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.field textarea { min-height: 120px; resize: vertical; }
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 4px rgba(15,140,140,.15);
+}
+.field.invalid input,
+.field.invalid select,
+.field.invalid textarea { border-color: #b42318; }
+.error-msg { color: #b42318; font-size: .85rem; margin-top: 6px; min-height: 0; }
+.error-msg:empty { display: none; }
+.form-status {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  font-size: .95rem;
+  display: none;
+}
+.form-status.show { display: block; }
+.form-status.success { background: #ecfdf3; color: #067647; border: 1px solid #abefc6; }
+.form-status.error { background: #fef3f2; color: #b42318; border: 1px solid #fecdca; }
+.form-note { font-size: .82rem; color: var(--text-muted); margin-top: 12px; }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--navy);
+  color: rgba(255,255,255,.78);
+  padding: 64px 0 24px;
+  font-size: .92rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.3fr;
+  gap: 40px;
+}
+.site-footer .brand { color: var(--white); margin-bottom: 14px; }
+.site-footer .brand:hover { color: var(--white); }
+.site-footer h4 { color: var(--white); font-size: 1rem; margin-bottom: 14px; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.site-footer a { color: rgba(255,255,255,.78); }
+.site-footer a:hover { color: #9be3e3; }
+.footer-bottom {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,.12);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+.disclaimer {
+  margin-top: 28px;
+  font-size: .8rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,.6);
+}
+
+/* ---------- Reveal animation ---------- */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in-view { opacity: 1; transform: none; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1080px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .features-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 900px) {
+  .section { padding: 72px 0; }
+  .hero .container,
+  .about-grid,
+  .contact-grid { grid-template-columns: 1fr; }
+  .hero-art { max-width: 420px; order: -1; }
+  .hero { min-height: auto; }
+  .about-grid { gap: 40px; }
+
+  .nav-toggle { display: block; }
+  .nav-links {
+    position: absolute;
+    top: var(--nav-h);
+    left: 0; right: 0;
+    flex-direction: column;
+    background: var(--white);
+    padding: 16px 20px 24px;
+    box-shadow: var(--shadow);
+    gap: 4px;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .35s ease, opacity .35s ease;
+  }
+  .nav-links.open { transform: none; opacity: 1; pointer-events: auto; }
+  .nav-links a { display: block; padding: 12px 4px; }
+  .nav-links li:last-child { width: 100%; }
+  .nav-cta { width: 100%; }
+}
+
+@media (max-width: 640px) {
+  .services-grid,
+  .features-grid,
+  .form-row,
+  .footer-grid { grid-template-columns: 1fr; }
+  .enquiry-form, .contact-info { padding: 28px 22px; }
+  .section-head { margin-bottom: 40px; }
+  .hero-actions .btn { width: 100%; }
+  .statement { font-size: 1.02rem; padding: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#home">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <a href="#home" class="brand" aria-label="Welcome Solution home">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <defs>
+          <linearGradient id="logoG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0f8c8c"/>
+            <stop offset="1" stop-color="#0b1f3a"/>
+          </linearGradient>
+        </defs>
+        <path d="M24 3 L42 9 V22 C42 34 34 42 24 46 C14 42 6 34 6 22 V9 Z" fill="url(#logoG)"/>
+        <path d="M14 24.5 L21 31.5 L35 17" fill="none" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Welcome Solution</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="btn btn--primary nav-cta">Enquire Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ SECTION 1: HERO ============ -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero-copy">
+      <h1 id="hero-title">Welcome Solution</h1>
+      <p class="tagline">Your Trusted Partner for Financial Security and Smart Solutions</p>
+      <p class="lead">At Welcome Solution, we help individuals and families explore suitable financial protection and funding options. From life and health insurance to car and home loans, we aim to make your financial journey simpler through guidance and customer-focused assistance.</p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn--primary">Explore Our Services</a>
+        <a href="#contact" class="btn btn--outline">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Hero illustration: family under protective shield with home and car -->
+    <svg class="hero-art" viewBox="0 0 520 420" role="img" aria-label="Illustration of a family protected by a shield, with a home and a car">
+      <defs>
+        <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1a3a63"/>
+          <stop offset="1" stop-color="#0f8c8c" stop-opacity=".35"/>
+        </linearGradient>
+        <linearGradient id="shieldG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2fb3b3"/>
+          <stop offset="1" stop-color="#0f8c8c"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="520" height="420" rx="28" fill="url(#skyG)"/>
+      <circle cx="400" cy="90" r="34" fill="#c9a227" opacity=".85"/>
+      <!-- Shield -->
+      <path d="M260 60 L345 88 V170 C345 240 305 285 260 302 C215 285 175 240 175 170 V88 Z" fill="url(#shieldG)" opacity=".95"/>
+      <path d="M260 60 L345 88 V170 C345 240 305 285 260 302 Z" fill="#ffffff" opacity=".06"/>
+      <!-- Family -->
+      <g transform="translate(260 190)">
+        <circle cx="-30" cy="-22" r="13" fill="#ffffff"/>
+        <path d="M-48 28 C-48 4 -12 4 -12 28 Z" fill="#ffffff"/>
+        <circle cx="10" cy="-26" r="15" fill="#ffffff"/>
+        <path d="M-10 28 C-10 0 30 0 30 28 Z" fill="#ffffff"/>
+        <circle cx="-2" cy="-6" r="9" fill="#c9a227"/>
+        <path d="M-16 28 C-16 14 12 14 12 28 Z" fill="#c9a227"/>
+      </g>
+      <!-- Home -->
+      <g transform="translate(60 250)">
+        <path d="M0 60 L60 10 L120 60 V130 H0 Z" fill="#eaf2fb"/>
+        <rect x="46" y="88" width="28" height="42" fill="#0f8c8c"/>
+        <rect x="14" y="78" width="22" height="22" fill="#9be3e3"/>
+      </g>
+      <!-- Car -->
+      <g transform="translate(350 300)">
+        <rect x="0" y="22" width="120" height="34" rx="10" fill="#eaf2fb"/>
+        <path d="M22 22 L40 0 H84 L100 22 Z" fill="#eaf2fb"/>
+        <circle cx="30" cy="60" r="12" fill="#0b1f3a"/>
+        <circle cx="92" cy="60" r="12" fill="#0b1f3a"/>
+        <rect x="46" y="6" width="32" height="14" rx="3" fill="#9be3e3"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ SECTION 2: ABOUT ============ -->
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div class="about-art reveal">
+      <!-- Financial planning illustration -->
+      <svg viewBox="0 0 480 360" role="img" aria-label="Illustration of financial planning with a document, chart and calculator">
+        <rect x="40" y="40" width="400" height="280" rx="18" fill="#ffffff" stroke="#cfe3f3" stroke-width="2"/>
+        <rect x="70" y="72" width="200" height="14" rx="7" fill="#0b1f3a" opacity=".85"/>
+        <rect x="70" y="100" width="150" height="10" rx="5" fill="#9bb6d2"/>
+        <rect x="70" y="122" width="170" height="10" rx="5" fill="#9bb6d2"/>
+        <!-- Bar chart -->
+        <rect x="80" y="230" width="32" height="50" rx="4" fill="#9be3e3"/>
+        <rect x="124" y="200" width="32" height="80" rx="4" fill="#2fb3b3"/>
+        <rect x="168" y="170" width="32" height="110" rx="4" fill="#0f8c8c"/>
+        <rect x="212" y="186" width="32" height="94" rx="4" fill="#0b1f3a"/>
+        <!-- Calculator -->
+        <rect x="300" y="150" width="110" height="150" rx="14" fill="#0b1f3a"/>
+        <rect x="314" y="166" width="82" height="30" rx="6" fill="#9be3e3"/>
+        <g fill="#c9a227">
+          <rect x="314" y="208" width="22" height="18" rx="4"/>
+          <rect x="344" y="208" width="22" height="18" rx="4"/>
+          <rect x="374" y="208" width="22" height="18" rx="4"/>
+          <rect x="314" y="236" width="22" height="18" rx="4"/>
+          <rect x="344" y="236" width="22" height="18" rx="4"/>
+          <rect x="374" y="236" width="22" height="18" rx="4"/>
+          <rect x="314" y="264" width="22" height="18" rx="4"/>
+          <rect x="344" y="264" width="22" height="18" rx="4"/>
+          <rect x="374" y="264" width="22" height="18" rx="4"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="about-copy reveal">
+      <span class="eyebrow">Who We Are</span>
+      <h2 id="about-title">About Welcome Solution</h2>
+      <p>Welcome Solution is focused on helping individuals and families explore financial solutions that support their needs and future goals.</p>
+      <p>We provide assistance across different financial services, including life insurance, health insurance, car loans, and home loans.</p>
+      <p>Our approach focuses on understanding customer requirements, explaining available options, and helping customers navigate the relevant application and documentation procedures.</p>
+      <p>We believe that making informed financial decisions is an important step towards a secure future.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 3: SERVICES ============ -->
+<section class="section section--alt" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Offer</span>
+      <h2 id="services-title">Our Financial Services</h2>
+      <p>Explore four core areas of financial protection and funding, all in one place.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Card 1: Life Insurance -->
+      <article class="service-card reveal" aria-labelledby="svc-life">
+        <div class="service-card__media">
+          <svg viewBox="0 0 300 160" role="img" aria-label="Family silhouette under an umbrella">
+            <rect width="300" height="160" rx="12" fill="#ffffff"/>
+            <path d="M70 70 A80 60 0 0 1 230 70 Z" fill="#0f8c8c"/>
+            <rect x="148" y="70" width="4" height="66" fill="#0b1f3a"/>
+            <circle cx="112" cy="110" r="10" fill="#0b1f3a"/><rect x="104" y="120" width="16" height="26" rx="6" fill="#0b1f3a"/>
+            <circle cx="188" cy="112" r="8" fill="#2fb3b3"/><rect x="181" y="121" width="14" height="22" rx="5" fill="#2fb3b3"/>
+          </svg>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 id="svc-life">Life Insurance</h3>
+          <p>Explore life insurance options designed to support financial protection and long-term planning for individuals and families.</p>
+          <ul>
+            <li>Pension Plans</li>
+            <li>Child Plans</li>
+            <li>Guaranteed Savings Plans</li>
+            <li>ULIP (Unit Linked Insurance Plans)</li>
+            <li>Term Insurance Plans</li>
+            <li>Return of Premium Term Plans</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" data-service="Life Insurance">Learn More</a>
+        </div>
+      </article>
+
+      <!-- Card 2: Health Insurance -->
+      <article class="service-card reveal" aria-labelledby="svc-health">
+        <div class="service-card__media">
+          <svg viewBox="0 0 300 160" role="img" aria-label="Medical cross with heart">
+            <rect width="300" height="160" rx="12" fill="#ffffff"/>
+            <rect x="122" y="34" width="56" height="92" rx="10" fill="#0f8c8c"/>
+            <rect x="104" y="52" width="92" height="56" rx="10" fill="#0f8c8c"/>
+            <rect x="136" y="44" width="28" height="72" rx="6" fill="#ffffff"/>
+            <rect x="114" y="62" width="72" height="28" rx="6" fill="#ffffff"/>
+            <path d="M150 128 C138 118 128 112 128 104 C128 98 133 95 137 95 C142 95 147 98 150 103 C153 98 158 95 163 95 C167 95 172 98 172 104 C172 112 162 118 150 128Z" fill="#c9a227"/>
+          </svg>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-9.3-9A5.2 5.2 0 0 1 12 6.5 5.2 5.2 0 0 1 21.3 12c-2.3 4.6-9.3 9-9.3 9z"/><path d="M8 12h2l1-2 2 4 1-2h2"/></svg>
+          </div>
+          <h3 id="svc-health">Health Insurance</h3>
+          <p>Explore health insurance options that help individuals and families prepare for unexpected medical expenses and healthcare needs.</p>
+          <ul>
+            <li>Individual Health Insurance</li>
+            <li>Family Health Insurance</li>
+            <li>Health Coverage Plans</li>
+            <li>Medical Expense Protection Options</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" data-service="Health Insurance">Learn More</a>
+        </div>
+      </article>
+
+      <!-- Card 3: Car Loans -->
+      <article class="service-card reveal" aria-labelledby="svc-car">
+        <div class="service-card__media">
+          <svg viewBox="0 0 300 160" role="img" aria-label="Car illustration">
+            <rect width="300" height="160" rx="12" fill="#ffffff"/>
+            <rect x="62" y="82" width="176" height="36" rx="12" fill="#0b1f3a"/>
+            <path d="M96 82 L118 54 H186 L208 82 Z" fill="#0f8c8c"/>
+            <rect x="124" y="60" width="26" height="18" rx="3" fill="#9be3e3"/>
+            <rect x="156" y="60" width="26" height="18" rx="3" fill="#9be3e3"/>
+            <circle cx="104" cy="122" r="16" fill="#1f2937"/><circle cx="104" cy="122" r="6" fill="#9be3e3"/>
+            <circle cx="196" cy="122" r="16" fill="#1f2937"/><circle cx="196" cy="122" r="6" fill="#9be3e3"/>
+          </svg>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18"/><circle cx="7.5" cy="16" r="1.5"/><circle cx="16.5" cy="16" r="1.5"/></svg>
+          </div>
+          <h3 id="svc-car">Car Loans</h3>
+          <p>Get assistance in exploring car loan options and understanding the financing process for purchasing your preferred vehicle.</p>
+          <ul>
+            <li>New Car Loans</li>
+            <li>Used Car Loans</li>
+            <li>Loan Eligibility Guidance</li>
+            <li>Documentation Assistance</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" data-service="Car Loan">Learn More</a>
+        </div>
+      </article>
+
+      <!-- Card 4: Home Loans -->
+      <article class="service-card reveal" aria-labelledby="svc-home">
+        <div class="service-card__media">
+          <svg viewBox="0 0 300 160" role="img" aria-label="House illustration">
+            <rect width="300" height="160" rx="12" fill="#ffffff"/>
+            <path d="M92 80 L150 32 L208 80 V132 H92 Z" fill="#eaf2fb" stroke="#9bb6d2" stroke-width="2"/>
+            <path d="M80 84 L150 26 L220 84" fill="none" stroke="#0f8c8c" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+            <rect x="136" y="200" width="0" height="0"/>
+            <rect x="136" y="100" width="28" height="32" fill="#0f8c8c"/>
+            <rect x="172" y="94" width="22" height="22" fill="#9be3e3"/>
+          </svg>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg>
+          </div>
+          <h3 id="svc-home">Home Loans</h3>
+          <p>Explore home financing options and receive guidance throughout the home loan application process.</p>
+          <ul>
+            <li>New Home Purchase Loans</li>
+            <li>Home Construction Loans</li>
+            <li>Home Loan Eligibility Guidance</li>
+            <li>Documentation Assistance</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" data-service="Home Loan">Learn More</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 4: WHY CHOOSE US ============ -->
+<section class="section" id="why-us" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Advantage</span>
+      <h2 id="why-title">Why Choose Us?</h2>
+      <p>Clear, customer-first support at every step of your financial decisions.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>
+        </div>
+        <h3>Customer-Focused Assistance</h3>
+        <p>Understand individual financial requirements.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>
+        </div>
+        <h3>Multiple Financial Solutions</h3>
+        <p>Explore insurance and loan-related options in one place.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v3l2 2"/></svg>
+        </div>
+        <h3>Clear Guidance</h3>
+        <p>Understand available options and application procedures.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 14l2 2 4-4"/></svg>
+        </div>
+        <h3>Simple Process</h3>
+        <p>Assistance with relevant documentation and application steps.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Reliable Support</h3>
+        <p>Customer-oriented communication and assistance.</p>
+      </div>
+    </div>
+
+    <p class="statement reveal">"Our goal is to make financial services easier to understand and more accessible to everyone."</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 5: CONTACT ============ -->
+<section class="section section--alt" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get in Touch</span>
+      <h2 id="contact-title">Get in Touch with Welcome Solution</h2>
+      <p>Looking for insurance or loan assistance? Contact us to discuss your requirements and explore the available options.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h2>Contact Details</h2>
+        <p>Share your requirements through the enquiry form or reach us directly by email.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="ci" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+            </span>
+            <div>
+              <strong>Business Name</strong>
+              <span>Welcome Solution</span>
+            </div>
+          </li>
+          <li>
+            <span class="ci" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            </span>
+            <div>
+              <strong>Address</strong>
+              <address>Old no 39/9, new no 39/11,<br>
+                Hyder garden 4th street,<br>
+                Jamalia, Perambur barracks,<br>
+                Chennai, Tamil Nadu - 600012.</address>
+            </div>
+          </li>
+          <li>
+            <span class="ci" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            </span>
+            <div>
+              <strong>Email</strong>
+              <span>welcomesolution07@gmail.com</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="contact-actions">
+          <a class="btn btn--outline" href="mailto:welcomesolution07@gmail.com">Email Us</a>
+          <a class="btn btn--outline" href="https://www.google.com/maps/search/?api=1&amp;query=Old+no+39%2F9%2C+new+no+39%2F11%2C+Hyder+garden+4th+street%2C+Jamalia%2C+Perambur+barracks%2C+Chennai%2C+Tamil+Nadu+600012" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+
+      <form class="enquiry-form reveal" id="enquiryForm" novalidate>
+        <h3>Send an Enquiry</h3>
+
+        <div class="form-row">
+          <div class="field" id="field-name">
+            <label for="fullName">Full Name <span class="req" aria-hidden="true">*</span></label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" required aria-describedby="err-name">
+            <div class="error-msg" id="err-name"></div>
+          </div>
+          <div class="field" id="field-email">
+            <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="err-email">
+            <div class="error-msg" id="err-email"></div>
+          </div>
+          <div class="field" id="field-mobile">
+            <label for="mobile">Mobile Number <span class="req" aria-hidden="true">*</span></label>
+            <input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="numeric" maxlength="13" required aria-describedby="err-mobile" placeholder="10-digit mobile number">
+            <div class="error-msg" id="err-mobile"></div>
+          </div>
+          <div class="field" id="field-service">
+            <label for="service">Service Interested In <span class="req" aria-hidden="true">*</span></label>
+            <select id="service" name="service" required aria-describedby="err-service">
+              <option value="">Select a service</option>
+              <option value="Life Insurance">Life Insurance</option>
+              <option value="Health Insurance">Health Insurance</option>
+              <option value="Car Loan">Car Loan</option>
+              <option value="Home Loan">Home Loan</option>
+            </select>
+            <div class="error-msg" id="err-service"></div>
+          </div>
+          <div class="field field--full" id="field-message">
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="err-message"></textarea>
+            <div class="error-msg" id="err-message"></div>
+          </div>
+        </div>
+
+        <!-- Honeypot field against spam bots (hidden from people) -->
+        <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true">
+
+        <button type="submit" class="btn btn--primary" id="submitBtn">Submit Enquiry</button>
+
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        <p class="form-note">Fields marked <span class="req">*</span> are required. We use your details only to respond to your enquiry.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="brand">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 3 L42 9 V22 C42 34 34 42 24 46 C14 42 6 34 6 22 V9 Z" fill="#0f8c8c"/>
+            <path d="M14 24.5 L21 31.5 L35 17" fill="none" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Welcome Solution</span>
+        </a>
+        <p>Helping individuals and families explore life and health insurance and car and home loan options, with clear, customer-focused guidance.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Life Insurance</a></li>
+          <li><a href="#services">Health Insurance</a></li>
+          <li><a href="#services">Car Loans</a></li>
+          <li><a href="#services">Home Loans</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:welcomesolution07@gmail.com">welcomesolution07@gmail.com</a></li>
+          <li>Old no 39/9, new no 39/11, Hyder garden 4th street, Jamalia, Perambur barracks, Chennai, Tamil Nadu - 600012</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="disclaimer">All insurance and loan products are subject to the respective insurer's or lender's eligibility criteria, terms, conditions, and approval processes. Information on this website is for general informational purposes only. Actual benefits, returns, premiums, interest rates, and loan approvals may vary depending on the selected product and provider.</p>
+
+    <div class="footer-bottom">
+      <span>Copyright © 2026 Welcome Solution. All Rights Reserved.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================================
+   Welcome Solution – Main script
+   ========================================================================== */
+
+(function () {
+  'use strict';
+
+  /*
+   * CONFIGURATION
+   * Set FORM_ENDPOINT to a form-processing URL that accepts JSON POST requests
+   * (for example a Formspree, Getform or own-server endpoint). Until it is set,
+   * the form will NOT report success, it reports that enquiries are unavailable.
+   */
+  var FORM_ENDPOINT = '';
+
+  var navbar = document.getElementById('navbar');
+  var navToggle = document.getElementById('navToggle');
+  var navMenu = document.getElementById('navMenu');
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-link'));
+
+  /* ---------- Sticky navbar shadow ---------- */
+  function onScroll() {
+    navbar.classList.toggle('scrolled', window.scrollY > 10);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- Mobile menu ---------- */
+  function setMenu(open) {
+    navMenu.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', String(open));
+  }
+  navToggle.addEventListener('click', function () {
+    setMenu(!navMenu.classList.contains('open'));
+  });
+  navMenu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') setMenu(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') setMenu(false);
+  });
+
+  /* ---------- Active link highlight ---------- */
+  var sectionIds = navLinks
+    .map(function (a) { return a.getAttribute('href'); })
+    .filter(function (h) { return h && h.charAt(0) === '#'; })
+    .map(function (h) { return h.slice(1); });
+  var sections = sectionIds
+    .map(function (id) { return document.getElementById(id); })
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window) {
+    var activeObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          navLinks.forEach(function (a) {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function (s) { activeObserver.observe(s); });
+  }
+
+  /* ---------- Scroll reveal animation ---------- */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('in-view'); });
+  }
+
+  /* ---------- "Learn More" buttons pre-select the service in the form ---------- */
+  var serviceSelect = document.getElementById('service');
+  document.querySelectorAll('[data-service]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var value = btn.getAttribute('data-service');
+      for (var i = 0; i < serviceSelect.options.length; i++) {
+        if (serviceSelect.options[i].value === value) {
+          serviceSelect.selectedIndex = i;
+          break;
+        }
+      }
+    });
+  });
+
+  /* ---------- Form validation ---------- */
+  var form = document.getElementById('enquiryForm');
+  var submitBtn = document.getElementById('submitBtn');
+  var statusBox = document.getElementById('formStatus');
+
+  var rules = {
+    fullName: {
+      field: 'field-name', err: 'err-name',
+      check: function (v) {
+        if (!v.trim()) return 'Please enter your full name.';
+        if (v.trim().length < 3) return 'Name must be at least 3 characters.';
+        if (!/^[A-Za-z .'-]+$/.test(v.trim())) return 'Name can only contain letters, spaces and basic punctuation.';
+        return '';
+      }
+    },
+    email: {
+      field: 'field-email', err: 'err-email',
+      check: function (v) {
+        if (!v.trim()) return 'Please enter your email address.';
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim())) return 'Please enter a valid email address.';
+        return '';
+      }
+    },
+    mobile: {
+      field: 'field-mobile', err: 'err-mobile',
+      check: function (v) {
+        var digits = v.replace(/[\s-]/g, '');
+        if (!digits) return 'Please enter your mobile number.';
+        if (!/^[6-9]\d{9}$/.test(digits)) return 'Enter a valid 10-digit Indian mobile number.';
+        return '';
+      }
+    },
+    service: {
+      field: 'field-service', err: 'err-service',
+      check: function (v) {
+        if (!v) return 'Please select a service.';
+        return '';
+      }
+    },
+    message: {
+      field: 'field-message', err: 'err-message',
+      check: function (v) {
+        if (!v.trim()) return 'Please enter a message.';
+        if (v.trim().length < 10) return 'Please provide a little more detail (at least 10 characters).';
+        if (v.trim().length > 1000) return 'Message must be 1000 characters or fewer.';
+        return '';
+      }
+    }
+  };
+
+  function validateField(name) {
+    var rule = rules[name];
+    var input = form.elements[name];
+    var message = rule.check(input.value);
+    var wrapper = document.getElementById(rule.field);
+    document.getElementById(rule.err).textContent = message;
+    wrapper.classList.toggle('invalid', Boolean(message));
+    input.setAttribute('aria-invalid', String(Boolean(message)));
+    return !message;
+  }
+
+  Object.keys(rules).forEach(function (name) {
+    var input = form.elements[name];
+    input.addEventListener('blur', function () { validateField(name); });
+    input.addEventListener('input', function () {
+      if (document.getElementById(rules[name].field).classList.contains('invalid')) {
+        validateField(name);
+      }
+    });
+  });
+
+  /* ---------- Status message helper ---------- */
+  function showStatus(type, text) {
+    statusBox.className = 'form-status show ' + type;
+    statusBox.textContent = text;
+  }
+
+  /* ---------- Submission ---------- */
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    statusBox.className = 'form-status';
+    statusBox.textContent = '';
+
+    // Honeypot: silently drop submissions where a hidden field was filled in.
+    if (form.elements.website.value) return;
+
+    var allValid = true;
+    var firstInvalid = null;
+    Object.keys(rules).forEach(function (name) {
+      if (!validateField(name)) {
+        allValid = false;
+        if (!firstInvalid) firstInvalid = form.elements[name];
+      }
+    });
+
+    if (!allValid) {
+      firstInvalid.focus();
+      showStatus('error', 'Please correct the highlighted fields and try again.');
+      return;
+    }
+
+    if (!FORM_ENDPOINT) {
+      showStatus('error', 'Online enquiries are temporarily unavailable. Please email us at welcomesolution07@gmail.com.');
+      return;
+    }
+
+    var payload = {
+      fullName: form.elements.fullName.value.trim(),
+      email: form.elements.email.value.trim(),
+      mobile: form.elements.mobile.value.replace(/[\s-]/g, ''),
+      service: form.elements.service.value,
+      message: form.elements.message.value.trim(),
+      source: 'Welcome Solution website'
+    };
+
+    submitBtn.disabled = true;
+    var originalLabel = submitBtn.textContent;
+    submitBtn.textContent = 'Sending…';
+
+    fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error('Request failed with status ' + res.status);
+        return res.json().catch(function () { return {}; });
+      })
+      .then(function () {
+        form.reset();
+        Object.keys(rules).forEach(function (name) {
+          document.getElementById(rules[name].err).textContent = '';
+          document.getElementById(rules[name].field).classList.remove('invalid');
+        });
+        showStatus('success', 'Thank you. Your enquiry has been sent. Our team will contact you shortly.');
+      })
+      .catch(function () {
+        showStatus('error', 'We could not send your enquiry. Please check your connection and try again, or email us at welcomesolution07@gmail.com.');
+      })
+      .finally(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalLabel;
+      });
+  });
+})();
+
+</script>
+</body>
+</html>
